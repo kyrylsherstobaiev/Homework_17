@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "Poppins";
+	src: url("../fonts/poppins-v15-latin-regular.woff2"), url("../fonts/poppins-v15-latin-regular.woff");
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("../fonts/poppins-v15-latin-500.woff2"), url("../fonts/poppins-v15-latin-500.woff");
+	font-weight: 500;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+

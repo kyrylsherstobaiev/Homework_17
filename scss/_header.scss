@@ -1,0 +1,25 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(209, 203, 203, 0.5);
+	font-size: 15px;
+	& > a {
+		color: black;
+		font-weight: 500;
+	}
+	span {
+		margin-right: 10px;
+		background-color: black;
+		color: white;
+		border-radius: 50%;
+		padding: 2px 7px;
+	}
+}
+
+.icons {
+	a {
+		margin-right: 12px;
+	}
+}

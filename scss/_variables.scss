@@ -1,0 +1,49 @@
+$setColorperc: (up, down, color_blue);
+$setColorlist: (errors, warnings, notices);
+$color_first: rgb(41, 41, 245);
+$color_second: rgb(207, 50, 50);
+$color_third: #2ed47a;
+$color_fourth: rgb(255, 165, 0);
+$color_fifth:  rgb(184, 180, 180);
+
+//**            для тренировки
+
+@each $item in $setColorperc {
+	&.#{$item} {
+		@if $item == up {
+			color: $color_third !important;
+		} @else if $item == down {
+			color: $color_second !important;
+		} @else {
+			color: $color_first !important;
+		}
+	}
+}
+
+//**               для тренировки
+
+@each $item in $setColorlist {
+	&.#{$item} {
+		@if $item == errors {
+			color: $color_second;
+		} @else if $item == warnings {
+			color: orange;
+		} @else {
+			color: rgb(0, 153, 255);
+		}
+	}
+}
+
+section {
+	max-width: 1100px;
+	margin: 30px auto;
+	font-size: 12px;
+}
+
+main {
+	padding: 25px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.31);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.31);
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.31);
+}
